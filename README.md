@@ -1,5 +1,4 @@
 # Dine Restaurant Website API Challenge #
-
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-design.jpg)
 
 ## Welcome! 👋
