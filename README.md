@@ -3,6 +3,7 @@
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-design.jpg)
 
 ## Welcome! 👋
+
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
 ## The challenge
