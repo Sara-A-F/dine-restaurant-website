@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  font-size: 90%; 
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  color: #242b37;
+  font-weight: 400;
+ }
+
+.main-container {
+background-color: #fff;
+}
+/*---------------Contents div------*/
+.content {
+ 
+}
+.heading {
+    height: 45rem;
+    font-weight: 300;
+}
+.heading-2 {
+    height: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.logo {
+  
+}
+
+p {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0; 
+    flex-direction: column; 
+    position: relative; 
+    text-align: center;
+}
+/*---------------color txt---------*/
+.txt-white {
+    color: rgb(255, 255, 255);
+}
+.txt-black {
+    color:rgb(0, 0, 0);
+}
+
+/*---------------Buttons-----------*/
+.btn-one {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2rem 5rem 1.8rem;
+    font-weight: 600;
+    transition: all 0.6s;
+    cursor: pointer;
+    outline: none;
+    font-family: "Spartan", sans-serif; }
+    .btn:hover {
+      background-color: #fff;
+      color: #111; }
+}
+.btn-two {
+    background-color: transparent;}
+    .btn:hover {
+      color: #111;
+}
+
+/*------------------------------------------------Intro Section------*/
+
+.intro {
+   
+    background-image: url("images/homepage/hero-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    height: 70.2rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0; 
+    flex-direction: column; 
+  
+}
+
+.content-intro {
+    
+}
+
+/*------------------------------------------------Features Section---*/
+.image-top {
+margin-top: -34px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11vw;
+    position: relative; 
+    flex-direction: column;
+    text-align: center;
+}
+
+/*------------------------------------------------Menu Section-------*/
+.highlights {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 2.6rem 0; 
+    flex-direction: column; 
+}
+.line {}
+
+/*------------------------------------------------Slider Section--------*/
+.slider-container {
+    display: flex;
+    align-items: center;
+    padding: 2.6rem 0; 
+    flex-direction: column; 
+  
+}
+.slider-container a {
+    background-color: black;
+}
+.slider {
+    display: flex;
+    align-items: center;
+    padding: 2.6rem 0; 
+    flex-direction: column; 
+}
+
+/*------------------------------------------------CTA Section--------*/
+.cta-section {
+    background-image: url("images/homepage/ready-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+}
+.cta-container{
+    
+    display: flex;
+    align-items: center;
+    padding: 20rem 0; 
+    flex-direction: column; 
+}
+
+/*------------------------------------------------Footer Section-----*/
+footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #111;
+    padding: 4rem 10vw;
+    margin-top: -4px;
+}
+.footer-container {
+}
+/*------------------------------------------------Media Queries------*/
