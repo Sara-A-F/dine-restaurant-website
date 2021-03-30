@@ -24,27 +24,32 @@ background-color: #fff;
 .content {
  
 }
+h2 {
+    
+}
 .heading {
-    height: 45rem;
     font-weight: 300;
 }
+
 .heading-2 {
-    height: 4rem;
+    display: flex;
+    flex-direction: column; 
     text-align: center;
     font-weight: 700;
 }
 
 .logo {
-  
+    padding: 3rem 0;
+    height: 9rem;  
 }
 
 p {
     display: flex;
     align-items: center;
-    padding: 0.5rem 0; 
     flex-direction: column; 
     position: relative; 
-    text-align: center;
+    text-align: center; 
+    margin: 5%;
 }
 /*---------------color txt---------*/
 .txt-white {
@@ -67,7 +72,8 @@ p {
     transition: all 0.6s;
     cursor: pointer;
     outline: none;
-    font-family: "Spartan", sans-serif; }
+    font-family: "Spartan", sans-serif;
+ }
     .btn:hover {
       background-color: #fff;
       color: #111; }
@@ -80,39 +86,49 @@ p {
 
 /*------------------------------------------------Intro Section------*/
 
-.intro {
-   
-    background-image: url("images/homepage/hero-bg-mobile.jpg");
+.intro-image {
+    display: flex;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     position: relative;
-    text-align: center;
-    height: 70.2rem;
-    display: flex;
-    align-items: center;
-    padding: 2rem 0; 
-    flex-direction: column; 
-  
+    flex-direction: column;    
+    align-items: center; 
 }
 
 .content-intro {
-    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding-top: 10rem;
+    padding-right: 1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    margin: 20%;
+
+}
+.intro-image a {
+   margin-bottom: 40%;
 }
 
 /*------------------------------------------------Features Section---*/
 .image-top {
-margin-top: -34px;
+margin-top: -60px;
 }
 
 .features {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 11vw;
+    padding: 2rem 6rem; 
     position: relative; 
     flex-direction: column;
     text-align: center;
+}
+.separator {
+    margin-top: 10px;
+    padding: 2rem 2rem; 
 }
 
 /*------------------------------------------------Menu Section-------*/
@@ -120,8 +136,10 @@ margin-top: -34px;
     background-color: black;
     display: flex;
     align-items: center;
-    padding: 2.6rem 0; 
-    flex-direction: column; 
+    text-align: center;
+    padding: 2rem 2rem; 
+    flex-direction: column;
+
 }
 .line {}
 
@@ -129,9 +147,9 @@ margin-top: -34px;
 .slider-container {
     display: flex;
     align-items: center;
-    padding: 2.6rem 0; 
     flex-direction: column; 
-  
+    margin-top: 10%;
+    
 }
 .slider-container a {
     background-color: black;
@@ -139,7 +157,7 @@ margin-top: -34px;
 .slider {
     display: flex;
     align-items: center;
-    padding: 2.6rem 0; 
+    padding: 4rem 4rem; 
     flex-direction: column; 
 }
 
@@ -152,11 +170,11 @@ margin-top: -34px;
     height: 50rem;
 }
 .cta-container{
-    
     display: flex;
     align-items: center;
-    padding: 20rem 0; 
+    padding: 20rem 0rem; 
     flex-direction: column; 
+    margin: 20%;
 }
 
 /*------------------------------------------------Footer Section-----*/
@@ -165,9 +183,16 @@ footer {
     flex-direction: column; 
     align-items: center;
     background-color: #111;
-    padding: 4rem 10vw;
-    margin-top: -4px;
+ 
 }
 .footer-container {
+    text-transform: uppercase;
+}
+
+.footer-col{
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
 }
 /*------------------------------------------------Media Queries------*/
