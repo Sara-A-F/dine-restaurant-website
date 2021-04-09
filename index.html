@@ -34,8 +34,21 @@
                     Eat the freshest produce from the comfort of our farmhouse.
             </p>
         </div>
-           <a href="booking.html" class="btn-one txt-white">Book a table</a>
-            
+          
+           <button class="open-button btn btn-one txt-white" onclick="openForm()">Book a table</button>
+           <div class="form-popup" id="myForm">
+            <form class="form-container" autocomplete="off">
+              
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="name" required>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <button type="submit" class="btnLogin">Book Now</button>
+              <button type="button" class="btnClose" onclick="closeForm()">Close</button>
+            </form>
+          </div>
         </section>    
        
 <!------------------------------------------------Features Section----->
@@ -100,75 +113,66 @@
 
              </div>
 
-            <div class="content">
-                <img src="" alt="" class=""/>
-
-                <h2 class="heading-2 txt-white">Heading</h2>
-                <p class="txt-white"> paragraph</p>
-                <div class="line"></div>
-
-            </div>
-
-            <div class="content">
-                <img src="" alt="" class=""/>
-
-                <h2 class="heading-2 txt-white">Heading</h2>
-                <p class="txt-white"> paragraph</p>
-                <div class="line"></div>
-            </div>
-
-            <div class="content">
-                <img src="" alt="" class=""/>
-
-                <h2 class="heading-2 txt-white">Heading</h2>
-                <p class="txt-white"> paragraph</p>
-              
-            </div>
+             <div id="root"></div>
 
         </section>
 <!------------------------------------------------Slider Section------->
-<section class="slider-container">
-
-<div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
+<section class="slider-container ">
+  <div class="slideshow-container">
+     
+<!-------------------------------------------------images slideshow---->
     <div class="mySlides fade">
-      
       <img src="images\homepage\family-gathering-mobile.jpg" style="width:100%">
     </div>
-  
-    <div class="mySlides fade">
-     
+
+    <div class="mySlides fade">  
       <img src="images\homepage\special-events-mobile.jpg" style="width:100%">
     </div>
-  
-    <div class="mySlides fade">
-    
+
+    <div class="mySlides fade"> 
       <img src="images\homepage\social-events-mobile.jpg" style="width:100%">
     </div>
-  
-  <!-- The links -->
-  <div style="text-align:center">
-    <span class="text-link" onclick="currentSlide(1)"><p>family gathering</p></span>
-    <span class="text-link" onclick="currentSlide(2)"><p>special events</p></span>
-    <span class="text-link" onclick="currentSlide(3)"><p>social events</p></span>
+<!---------------------------------------------------links slideshow---->
+    <div style="text-align:center">
+      <span class="text-link" onclick="currentSlide(1)"><p>family gathering</p></span>
+      <span class="text-link" onclick="currentSlide(2)"><p>special events</p></span>
+      <span class="text-link" onclick="currentSlide(3)"><p>social events</p></span>
+    </div>
+<!-----------------------------------------------------text slideshow------->
+ 
   </div>
 
+  <div class="myTextSlide" >    
+    <h1 class="heading-2 txt-black">Family Gathering</h1>
+    <p class="txt-black">
+      We love catering for entire families. So please bring everyone
+      along for a special meal with your loved ones. We’ll provide a
+      memorable experience for all.
+    </p>
 </div>
-<!-- The links end -->
 
-            <div class="slider" id="">
+<div class="myTextSlide " >
+    <h1 class="heading-2 txt-black">Special Events</h1>
+    <p class="txt-black">
+      Whether it’s a romantic dinner or special date you’re
+    celebrating with others we’ll look after you. We’ll be sure to
+    mark your special date with an unforgettable meal.
+    </p>
+</div>
 
-                <h1 class="heading-2 txt-black">Family Gathering</h1>
-                <p class="txt-black">
-                  We love catering for entire families. So please bring everyone
-                  along for a special meal with your loved ones. We’ll provide a
-                  memorable experience for all.
-                </p>
-                <a href="booking.html" class="btn-one txt-white">Book a table</a>
+<div class="myTextSlide " >
+    <h1 class="heading-2 txt-black">Social Events</h1>
+    <p class="txt-black">
+    Are you looking to have a larger social event? No problem! We’re
+    more than happy to cater for big parties. We’ll work with you to
+    make your event a hit with everyone.
+    </p>
+</div> 
 
-            </div>
+    <a href="booking.html" class=" btn btn-one txt-white" onclick="openForm()">Book a table</a>
+
 </section>
+ 
 <!------------------------------------------------cta Section------->
 <section class="cta-section">
 
@@ -178,7 +182,7 @@
 
       <br>
 
-      <a href="booking.html" class="btn-one txt-white">Book a table</a>
+      <a href="booking.html" class="btn btn-one txt-white" onclick="openForm()">Book a table</a>
       
     </div>
 

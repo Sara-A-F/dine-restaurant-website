@@ -1,4 +1,4 @@
-// MANAGING THE SLIDER SECTION
+// ------------------------------------------------MANAGING THE SLIDER SECTION
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -13,33 +13,82 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var titleSlide = document.getElementsByClassName("text-link");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  var textLink = document.getElementsByClassName("text-link");
+  if (n > slides.length) {
+    slideIndex = 1
+  }   
+  if (n < 1) {
+    slideIndex = slides.length 
   }
-  for (i = 0; i < titleSlide.length; i++) {
-    titleSlide[i].className = titleSlide[i].className.replace(" active", "");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+  for (i = 0; i < textLink.length; i++) {
+    textLink[i].className = textLink[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  titleSlide[slideIndex-1].className += " active";
+  textLink[slideIndex-1].className += " active";
+  
 }
 
-// MANAGING THE DROPDOWN SELECTOR
 
-// MANAGING THE PEOPLE COUNT SELECTOR
+//--------------------------------------------------------SUBMITTING THE FORM
 
-// SUBMITTING THE FORM
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
-// CLOSING THE SUCCESS MESSAGE
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
 
-// CHECKING IF AN INPUT IS NUMERIC
 
-// VALIDATING NAME
+//--------------------------------------------------------API - IMAGE AND TITLE
+const app = document.getElementById('root');
+const container = document.createElement('div');
+container.setAttribute('class', 'container');
 
-// VALIDATING EMAIL
+require('dotenv').config();
+const api_key = process.env.API_KEY;
 
-// VALIDATING DATE
 
-// VALIDATING TIME
+const ingredients = ["salmon","filet mignon", "chocolate mousse"];
+
+app.appendChild(container)
+
+let url = "";
+
+url = `https://api.spoonacular.com/food/menuItems/search?apiKey=${api_key}&query=${ingredients}&number=2`;
+    console.log("url: ", url);
+
+    async function getApi() {
+      await fetch(url)
+          .then((response) => response.json())
+          .then((data) => renderApi(data))
+          .catch((error) => console.log("error: ", error));
+  };
+ 
+  // Begin accessing JSON data here
+
+  function renderApi(data) {
+    let dataAPI = data;
+    console.log("data API: ", dataAPI);
+
+    let card = document.createElement('div');
+    card.className = 'container renderDiv';
+    card.innerHTML =`
+    <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <img src=${dataAPI.menuItems[0].image} alt="">  
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <p class="txt-white">${dataAPI.menuItems[0].title}</p>
+        </div>
+    </div>`;
+
+      container.appendChild(card);
+    
+  }
+
+getApi();
