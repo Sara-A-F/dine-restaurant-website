@@ -25,13 +25,14 @@ function showSlides(n) {
     slides[i].style.display = "none";  
 }
   for (i = 0; i < textLink.length; i++) {
-    textLink[i].className = textLink[i].className.replace(" active", "");
+    textLink[i].className = textLink[i].className.replace("active", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  textLink[slideIndex-1].className += " active";
+  textLink[slideIndex-1].className += "active";
   
 }
 
+console.log(showSlides);
 
 //--------------------------------------------------------SUBMITTING THE FORM
 
