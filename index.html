@@ -57,12 +57,12 @@
             <img src="images\homepage\enjoyable-place-mobile.jpg" alt="" class="image-top">
 
            
-                <div class="content">
-                    <img
-                    src="images\pattern-divide.svg"
-                    alt="separator"
-                    class="separator"
-                  />
+            <div class="content">
+              <img
+              src="images\pattern-divide.svg"
+              alt="separator"
+              class="separator"
+            />
                     <h1 class="heading-2">
                       Enjoyable place for all the family
                     </h1>
@@ -114,66 +114,66 @@
              </div>
 
              <div id="root"></div>
+</section>
+<!------------------------------------------------------------------------------slides-->
 
-        </section>
-<!------------------------------------------------Slider Section------->
-<section class="slider-container ">
-  <div class="slideshow-container">
+<section class="slideshow-container">
+    <img src="images\homepage\family-gathering-mobile.jpg" style="width:100%">
+      <br>
+    <div class="text" >    
       
-  <!-------------------------------------------------images slideshow---->
-    <div class="mySlides fade">
-      <img src="images\homepage\family-gathering-mobile.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides fade">  
-      <img src="images\homepage\special-events-mobile.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides fade"> 
-      <img src="images\homepage\social-events-mobile.jpg" style="width:100%">
-    </div>
-  <!---------------------------------------------------links slideshow---->
-    <div style="text-align:center">
-      <span class="text-link" onclick="currentSlide(1)"><p>family gathering</p></span>
-      <span class="text-link" onclick="currentSlide(2)"><p>special events</p></span>
-      <span class="text-link" onclick="currentSlide(3)"><p>social events</p></span>
-    </div>
-  <!-----------------------------------------------------text slideshow------->
-  
-    
-
-    <div class="myTextSlide" >    
       <h1 class="heading-2 txt-black">Family Gathering</h1>
       <p class="txt-black">
         We love catering for entire families. So please bring everyone
         along for a special meal with your loved ones. We’ll provide a
         memorable experience for all.
       </p>
-    </div>
-
-    <div class="myTextSlide" >
+      <br>
       <h1 class="heading-2 txt-black">Special Events</h1>
       <p class="txt-black">
         Whether it’s a romantic dinner or special date you’re
       celebrating with others we’ll look after you. We’ll be sure to
       mark your special date with an unforgettable meal.
       </p>
-    </div>
-
-    <div class="myTextSlide" >
+      <br>
+      
       <h1 class="heading-2 txt-black">Social Events</h1>
       <p class="txt-black">
       Are you looking to have a larger social event? No problem! We’re
       more than happy to cater for big parties. We’ll work with you to
       make your event a hit with everyone.
       </p>
-    </div> 
-    
-  </div>   
-    <a href="booking.html" class=" btn btn-one txt-white" onclick="openForm()">Book a table</a>
 
-</section>
+    </div>
+
  
+    <button class="open-button btn btn-two txt-white" onclick="openForm()">Book a table</button>
+           <div class="form-popup" id="myForm">
+            <form class="form-container" autocomplete="off">
+              
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter Name" name="name" required>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <button type="submit" class="btnLogin">Book Now</button>
+              <button type="button" class="btnClose" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        </section>
+
+ <!--------
+  <div style="text-align:center">
+    <span class="text-link" onclick="currentSlide(1)"><p>family gathering</p></span>
+    <span class="text-link" onclick="currentSlide(2)"><p>special events</p></span>
+    <span class="text-link" onclick="currentSlide(3)"><p>social events</p></span>
+  </div>
+  <a href="booking.html" class=" btn btn-one txt-white" onclick="openForm()">Book a table</a>
+</div>
+
+----> 
+
 <!------------------------------------------------cta Section------->
 <section class="cta-section">
 
@@ -182,13 +182,27 @@
       <h2 class="heading-2 txt-white">Ready to make a reservation?</h2>
 
       <br>
-      <a href="booking.html" class="btn btn-one txt-white" onclick="openForm()">Book a table</a>
+      <button class="open-button btn btn-one txt-white" onclick="openForm()">Book a table</button>
+      <div class="form-popup" id="myForm">
+       <form class="form-container" autocomplete="off">
+         
+         <label for="name"><b>Name</b></label>
+         <input type="text" placeholder="Enter Name" name="name" required>
+     
+         <label for="email"><b>Email</b></label>
+         <input type="text" placeholder="Enter Email" name="email" required>
+
+         <button type="submit" class="btnLogin">Book Now</button>
+         <button type="button" class="btnClose" onclick="closeForm()">Close</button>
+       </form>
+     </div>
 
   </div>
   
 </section>
     
     </main>
+
 <!------------------------------------------------Footer Section----->
     <footer>
 
