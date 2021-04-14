@@ -1,11 +1,3 @@
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: inherit; 
-}
-
 html {
   font-size: 90%; 
 }
@@ -228,16 +220,15 @@ margin-top: -60px;
     align-items: center;
     padding: 10rem 0rem; 
     flex-direction: column; 
-    margin: 20%;
+    margin: 20% ;
 }
 
 /*------------------------------------------------Footer Section-----*/
 footer {
     display: flex;
-    flex-direction: column; 
     align-items: center;
+    flex-direction: column; 
     background-color: #111;
- 
 }
 .footer-container {
     text-transform: uppercase;
@@ -262,7 +253,8 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .main-container {
-    width: 80%;
+    width: 50%;
+    margin: 0 10% 0 10%;
   }
 }
 
@@ -270,11 +262,8 @@ footer {
 @media only screen and (min-width: 992px) {
   .main-container {
     width: 50%;
+    margin: 0 25% 0 25%;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .body {
-    width: 50%;
-   
-  }
+
